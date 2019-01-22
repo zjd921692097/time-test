@@ -19,7 +19,7 @@ public class LogCostInterceptor implements HandlerInterceptor {
         start = System.currentTimeMillis();
         LocalDateTime end = LocalDateTime.now();
         Duration duration = Duration.between(DemoApplication.firstTime,end);
-        if(duration.toMinutes()>1){
+        if(duration.toMinutes()>=1){
             Logger.info("服务正常中！");
            return true;
         }
