@@ -23,7 +23,7 @@ public class LogCostInterceptor implements HandlerInterceptor {
             Logger.info("服务正常中！");
            return true;
         }
-        Logger.error("应用程序启动未完成，服务不能访问！");
+       // Logger.error("应用程序启动未完成，服务不能访问！");
         httpServletResponse.setStatus(500);
         Thread.sleep(6000);
         return false;

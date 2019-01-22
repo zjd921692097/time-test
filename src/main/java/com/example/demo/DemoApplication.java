@@ -16,8 +16,10 @@ public class DemoApplication {
     public static void main(String[] args) {
         int count = 0;
         SpringApplication.run(DemoApplication.class, args);
-        Logger.warn("asdfasdf{}","程序启动成功！");
-
+        Logger.warn("订单ID"+Math.random()*10);
+        Logger.warn("订单ID"+Math.random()*100);
+        Logger.warn("订单ID"+Math.random()*10);
+        Logger.warn("订单ID"+Math.random()*100);
         firstTime = LocalDateTime.now();
 
     }

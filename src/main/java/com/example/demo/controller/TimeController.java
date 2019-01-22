@@ -13,7 +13,7 @@ public class TimeController {
     @GetMapping("/time")
     public String time(){
         count++;
-        Logger.warn("第"+count+"次调time");
+
         return "after 2 minutes!";
     }
 }
