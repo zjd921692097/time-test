@@ -11,9 +11,8 @@ public class TimeController {
     static int count = 0;
     private static org.slf4j.Logger Logger = LoggerFactory.getLogger(TimeController.class);
     @GetMapping("/time")
-    public String time(){
-        count++;
-
+    public String time() throws Exception{
+        Thread.sleep(4000);
         return "after 2 minutes!";
     }
 }
